@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    color: red;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.title {
+    animation: titleAnimation 2s infinite alternate;
+}
+
+.title h1 {
+    font-size: 5rem;
+    letter-spacing: 10px;
+}
+
+.links {
+    margin-top: 50px;
+}
+
+.links a {
+    color: red;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: white;
+}
+
+@keyframes titleAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
